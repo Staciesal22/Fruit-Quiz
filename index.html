@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Fruit Are You?</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Which Fruit Are You?</h1>
+        <div id="quiz-container">
+            <div class="quiz-question" data-question="1">
+                <p>What is your favorite season?</p>
+                <button onclick="selectAnswer(1, 'a')">Summer</button>
+                <button onclick="selectAnswer(1, 'b')">Winter</button>
+                <button onclick="selectAnswer(1, 'c')">Spring</button>
+                <button onclick="selectAnswer(1, 'd')">Fall</button>
+            </div>
+            <div class="quiz-question" data-question="2" style="display: none;">
+                <p>Choose a vacation destination:</p>
+                <button onclick="selectAnswer(2, 'a')">Beach</button>
+                <button onclick="selectAnswer(2, 'b')">Mountains</button>
+                <button onclick="selectAnswer(2, 'c')">City</button>
+                <button onclick="selectAnswer(2, 'd')">Countryside</button>
+            </div>
+            <div class="quiz-question" data-question="3" style="display: none;">
+                <p>What's your favorite activity?</p>
+                <button onclick="selectAnswer(3, 'a')">Reading</button>
+                <button onclick="selectAnswer(3, 'b')">Sports</button>
+                <button onclick="selectAnswer(3, 'c')">Cooking</button>
+                <button onclick="selectAnswer(3, 'd')">Traveling</button>
+            </div>
+            <div id="result" style="display: none;">
+                <h2>You are a <span id="fruit-type"></span>!</h2>
+                <img id="fruit-img" src="" alt="Fruit Image" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+
